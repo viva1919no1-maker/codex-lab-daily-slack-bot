@@ -21,3 +21,4 @@
 ## 関連Skill
 - `sns-daily-post` — vivaのX/Threads自動運用（口調・伸びる型・伸びるネタの3要素からSlack承認フローまで）
 - `executive-sync` — 取締役同士の連携効率化（連絡のトリアージ、議事録からのタスク抽出、意思決定の並列検証）
+- `daily-urgent-digest` — 毎朝「今日中に対応必須」な項目だけを検知してオーナーにDMダイジェストを送る（executive-syncのトリアージを毎日自動で回す版。定時実行にはTriggersの設定が別途必要）
