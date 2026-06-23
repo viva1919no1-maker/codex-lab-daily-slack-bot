@@ -41,7 +41,7 @@ description: viva専用 — 毎朝、主要なSlackチャンネルを横断ス�
 2. 名前を付け、プロンプトに「`codex-lab-daily-slack-bot` リポジトリの `daily-urgent-digest` スキルを実行して、本日中に対応必須な項目を抽出し、オーナー宛Slack DMに下書きを作成して」のように自己完結した指示を書く（Routineは無人実行のため文脈なしで動く前提で書く）
 3. リポジトリに `codex-lab-daily-slack-bot` を追加、環境は Default で可（SlackはMCPコネクタ経由でAnthropic側を通るため追加のネットワーク許可は不要）
 4. トリガーで「Schedule」→「Daily」を選び時刻を設定。**時刻はアカウント/ブラウザのローカルタイムゾーンで解釈される**ため、JST 9:00に相当するローカル時刻に変換して入力する（アカウントの表示がJSTでなければ要注意）
-5. Connectors欄にSlackコネクタが含まれていることを確認して「Create」
+5. Connectors欄は**Slackだけ残し、他（Gmail/Google Calendar/Google Drive/Notion/Canva等）はすべて外す**。Routine実行中はコネクターの全ツール（書き込み含む）が承認なしで使えるため、このスキルが使わないコネクターを繋いだままにすると無関係な誤操作のリスクになる。最小権限で「Create」
 
 詳細: https://code.claude.com/docs/en/routines
 
